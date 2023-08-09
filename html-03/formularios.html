@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <h1>Formulario</h1>
+
+    <form action="" method="get" enctype="application/x-www-form-urlencoded">
+      <div>
+        <label for="nombre">Nombre: </label>
+        <input
+          type="text"
+          name="nombre"
+          id="nombre"
+          placeholder="Escriba el nombre completo"
+          value="Juan"
+        />
+      </div>
+
+      <div>
+        <label for="password">Contraseña: </label>
+        <input type="password" name="password" id="password" required />
+      </div>
+
+      <div>
+        <label for="email">Correo: </label>
+        <input type="email" name="correo" id="email" />
+      </div>
+
+      <div>
+        <label for="mensaje">Mensaje: </label>
+        <textarea readonly name="mensaje" id="mensaje" cols="30" rows="10">
+Texto predeterminado</textarea
+        >
+      </div>
+
+      <div>
+        <input type="radio" name="lenguaje" id="html" value="html" />
+        <label for="html">HTML</label>
+
+        <input type="radio" name="lenguaje" id="css" value="css" />
+        <label for="css">CSS</label>
+
+        <input type="radio" name="lenguaje" id="js" value="js" />
+        <label for="js">JS</label>
+      </div>
+
+      <div>
+        <input type="checkbox" name="html" id="html" value="1" />
+        <label for="html">HTML</label>
+
+        <input type="checkbox" name="css" id="css" value="2" />
+        <label for="css">CSS</label>
+
+        <input type="checkbox" name="js" id="js" />
+        <label for="js">JS</label>
+      </div>
+
+      <div>
+        <label for="provincias">Provincias</label>
+        <select name="provincias" id="provincias">
+          <option value=""></option>
+          <option value="ba">Buenos Aires</option>
+          <option value="cb">Cordoba</option>
+          <option value="tu">Tucuman</option>
+        </select>
+      </div>
+
+      <!-- <input type="submit" value="Enviar"> -->
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
