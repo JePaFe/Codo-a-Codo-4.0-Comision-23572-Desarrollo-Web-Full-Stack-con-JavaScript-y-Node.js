@@ -1,0 +1,35 @@
+/* section > p {
+  color: red;
+}
+
+h2 + p {
+  color: green;
+} */
+
+/* h2 ~ p {
+  color: blue;
+} */
+
+.link {
+  text-decoration: none;
+}
+
+.link.active {
+  color: brown;
+}
+
+section h2 {
+  color: crimson;
+}
+
+/* .seccion-1 h2 {
+    color: purple;
+} */
+
+/* h2.subtitulo-2 {
+    color: darkorange;
+} */
+
+/* #parrafo.un-parrafo {
+    color: fuchsia;
+} */

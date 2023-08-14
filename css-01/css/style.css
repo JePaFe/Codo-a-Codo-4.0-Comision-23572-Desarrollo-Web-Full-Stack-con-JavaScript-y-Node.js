@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+/* p {
+  color: red;
+  font-size: 24px;
+}
+
+.parrafo-destacado {
+  color: blue;
+}
+
+#parrafo-4 {
+  color: blueviolet;
+} */
+
+/* body {
+  color: red;
+}
+
+header {
+    border: solid;
+    background-color: aquamarine;
+} */
+
+/* BEM */
+
+/* .parrafo-destacado {
+  color: blueviolet;
+}
+
+#parrafo-2 {
+  color: green;
+} */
+
+/* p {
+  color: tomato !important;
+} */
+
+main section p {
+  color: tomato;
+}
