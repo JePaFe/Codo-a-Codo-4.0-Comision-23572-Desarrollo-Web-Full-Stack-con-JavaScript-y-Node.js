@@ -1,0 +1,25 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); */
+
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/Poppins-Bold.ttf);
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: rgba(87, 30, 30, 1);
+}
