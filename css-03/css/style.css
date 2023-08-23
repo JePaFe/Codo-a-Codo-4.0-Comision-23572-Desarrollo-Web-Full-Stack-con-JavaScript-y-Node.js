@@ -1,0 +1,26 @@
+html {
+  font-size: 62.5%; /* 10px */
+}
+
+p {
+  background-color: aqua;
+  width: 10rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+span {
+  font-size: 1.5rem;
+}
+
+main {
+  background-color: red;
+  width: 50%;
+}
+
+section {
+  background-color: green;
+  width: 50vw;
+}
