@@ -1,0 +1,28 @@
+a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  color: darkorange;
+}
+
+h1 + p {
+  color: crimson;
+}
+
+h2 + p + p {
+  color: green;
+}
+
+section > p {
+  color: violet;
+}
+
+h1, h2, h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
