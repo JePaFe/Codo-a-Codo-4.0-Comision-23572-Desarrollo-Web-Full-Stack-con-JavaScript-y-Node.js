@@ -1,0 +1,20 @@
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: red;
+  color: snow;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: green;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-color: blue;
+  }
+}
