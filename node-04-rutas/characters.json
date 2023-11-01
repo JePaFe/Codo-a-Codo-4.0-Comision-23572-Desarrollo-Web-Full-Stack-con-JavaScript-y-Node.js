@@ -1,0 +1,27 @@
+[
+  {
+    "full_name": "Rick Sanchez",
+    "age": "70",
+    "about": "Cynical, alcoholic, and incredibly intelligent scientist"
+  },
+  {
+    "full_name": "Morty Smith",
+    "age": "14",
+    "about": "Timid, nervous, and often easily influenced"
+  },
+  {
+    "full_name": "Summer Smith",
+    "age": "17",
+    "about": "Rebellious, adventurous, and self-assured"
+  },
+  {
+    "full_name": "Beth Smith",
+    "age": "34",
+    "about": "Independent, strong-willed, and a skilled horse surgeon"
+  },
+  {
+    "full_name": "Jerry Smith",
+    "age": "34",
+    "about": "Insecure, bumbling, and often the butt of jokes"
+  }
+]
