@@ -1,0 +1,19 @@
+<li>
+  <span class="<%= tarea.completed ? 'done' : '' %>"><%= tarea.title %></span>
+
+  <form action="/<%= tarea.id %>?_method=PUT" method="post">
+    <button type="submit">
+      <i class="bx bx-check"></i>
+    </button>
+  </form>
+
+  <form
+    action="/<%= tarea.id %>?_method=DELETE"
+    class="form-delete"
+    method="post"
+  >
+    <button type="submit">
+      <i class="bx bx-trash"></i>
+    </button>
+  </form>
+</li>
