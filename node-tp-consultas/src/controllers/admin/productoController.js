@@ -11,6 +11,7 @@ const index = async (req, res) => {
   try {
     const productos = await model.findAll({
       include: "Category",
+      limit: 9
       // attributes: ["id", "nombre", "precio"],
     });
     console.log(productos);
@@ -64,7 +65,7 @@ const store = async (req, res) => {
         .toFile(
           path.resolve(
             __dirname,
-            `../../../public/uploads/productos/producto_${producto.id}.jpg`
+            `../../../public/uploads/productos/producto_${producto.id}.webp`
           )
         );
     }
