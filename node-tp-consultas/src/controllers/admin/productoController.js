@@ -8,11 +8,15 @@ const model = require("../../models/Product");
 const modelCategory = require("../../models/Category");
 
 const index = async (req, res) => {
+  // req.query ?collectionId=2
   try {
     const productos = await model.findAll({
       include: "Category",
-      limit: 9
+      limit: 9,
       // attributes: ["id", "nombre", "precio"],
+      // where: {
+      //   collectionId: req.query.collectionId
+      // }
     });
     console.log(productos);
     res.render("admin/productos/index", { productos });

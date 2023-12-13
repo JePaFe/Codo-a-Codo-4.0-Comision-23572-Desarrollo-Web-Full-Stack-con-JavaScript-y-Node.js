@@ -36,6 +36,9 @@ const isLogin = (req, res, next) => {
 
 const sequelize = require("./src/models/connection");
 
+require("./src/models/Cart");
+require("./src/models/CartItem");
+
 app.set("view engine", "ejs");
 app.set("views", "./src/views");
 
@@ -70,7 +73,7 @@ const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, async () => {
   try {
-    await sequelize.sync({alter: true});
+    await sequelize.sync({ force: true });
   } catch (error) {
     console.log(error);
   }

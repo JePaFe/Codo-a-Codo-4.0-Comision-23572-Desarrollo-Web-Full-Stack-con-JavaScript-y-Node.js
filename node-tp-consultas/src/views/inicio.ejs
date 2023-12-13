@@ -11,6 +11,9 @@
       <h1>Inicio</h1>
       <p><%= mensaje %></p>
 
+      <input type="search" name="" id="searchId" />
+      
+
       <ul>
         <% productos.forEach(producto => { %>
         <li><%= producto.nombre %></li>
@@ -18,5 +21,13 @@
       </ul>
     </main>
     <%- include('partials/footer') %>
+
+    <script>
+      const search = document.querySelector("#searchId");
+      search.addEventListener("input", (event) => {
+        console.log(event.target.value);
+
+      });
+    </script>
   </body>
 </html>

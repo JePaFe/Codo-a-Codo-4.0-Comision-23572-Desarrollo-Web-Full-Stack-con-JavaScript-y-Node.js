@@ -4,7 +4,12 @@ const index = (req, res) => {
     { id: 2, nombre: "Producto 2" },
     { id: 3, nombre: "Producto 3" },
   ];
-  res.render("inicio", { mensaje: "Hola EJS", productos });
+
+  res.render("inicio", {
+    mensaje: "Hola EJS",
+    productos,
+    layout: "layouts/adminLayout",
+  });
 };
 
 module.exports = {
