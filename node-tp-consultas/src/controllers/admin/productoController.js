@@ -29,7 +29,7 @@ const index = async (req, res) => {
 const create = async (req, res) => {
   try {
     const categorias = await modelCategory.findAll({
-      order: [["nombre", "ASC"]],
+      // order: [["nombre", "ASC"]],
     });
     res.render("admin/productos/create", { categorias });
   } catch (error) {
@@ -46,7 +46,7 @@ const store = async (req, res) => {
   if (!errors.isEmpty()) {
     try {
       const categorias = await modelCategory.findAll({
-        order: [["nombre", "ASC"]],
+        // order: [["nombre", "ASC"]],
       });
       return res.render("admin/productos/create", {
         categorias,
@@ -72,6 +72,9 @@ const store = async (req, res) => {
             `../../../public/uploads/productos/producto_${producto.id}.webp`
           )
         );
+
+      // producto.image = `producto_${producto.id}.webp`;
+      // producto.save();
     }
 
     res.redirect("/admin/productos");
@@ -106,7 +109,7 @@ const update = async (req, res) => {
   if (!errors.isEmpty()) {
     try {
       const categorias = await modelCategory.findAll({
-        order: [["nombre", "ASC"]],
+        // order: [["nombre", "ASC"]],
       });
       return res.render("admin/productos/edit", {
         categorias,

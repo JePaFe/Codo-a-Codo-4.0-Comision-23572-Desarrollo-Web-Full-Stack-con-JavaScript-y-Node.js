@@ -1,15 +1,38 @@
-const index = (req, res) => {
-  const productos = [
-    { id: 1, nombre: "Producto 1" },
-    { id: 2, nombre: "Producto 2" },
-    { id: 3, nombre: "Producto 3" },
-  ];
+const model = require("../models/Product");
 
-  res.render("inicio", {
-    mensaje: "Hola EJS",
-    productos,
-    layout: "layouts/adminLayout",
-  });
+const index = async (req, res) => {
+  console.log(req.query);
+
+  let where = {};
+
+  if (req.query.category) {
+    // where = {
+    //   CategoryId: req.query.category,
+    // };
+    where.CategoryId = req.query.category;
+  }
+
+  // if (req.query.collection) {
+  //   // where = {
+  //   //   CollectionId: req.query.collection,
+  //   // };
+  //   where.CollectionId = req.query.collection;
+  // }
+
+  console.log(where);
+
+  try {
+    const productos = await model.findAll({
+      where: where,
+    });
+    res.render("inicio", {
+      mensaje: "Hola EJS",
+      productos,
+      layout: "layouts/adminLayout",
+    });
+  } catch (error) {
+    res.status(500).send(error);
+  }
 };
 
 module.exports = {
