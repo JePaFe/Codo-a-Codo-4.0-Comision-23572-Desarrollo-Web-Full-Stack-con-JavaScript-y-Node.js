@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const sharp = require("sharp");
-
+const mysql = require("mysql2");
 const { validationResult } = require("express-validator");
 
 const model = require("../../models/Product");
@@ -10,6 +10,7 @@ const modelCategory = require("../../models/Category");
 const index = async (req, res) => {
   // req.query ?collectionId=2
   try {
+    
     const productos = await model.findAll({
       include: "Category",
       limit: 9,
@@ -63,7 +64,7 @@ const store = async (req, res) => {
     const producto = await model.create(req.body);
     console.log(producto);
 
-    if (req.file) {
+    if (req.files["frente"]) {
       sharp(req.file.buffer)
         .resize(300)
         .toFile(

@@ -23,7 +23,7 @@ const index = async (req, res) => {
 
   try {
     const productos = await model.findAll({
-      where: where,
+      where,
     });
     res.render("inicio", {
       mensaje: "Hola EJS",

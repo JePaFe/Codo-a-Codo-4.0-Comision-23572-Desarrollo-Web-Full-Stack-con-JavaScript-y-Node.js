@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio</title>
+    <link rel="icon" type="image/png" href="/arbol.png" />
   </head>
   <body>
     <%- include('partials/header') %>
@@ -12,7 +13,6 @@
       <p><%= mensaje %></p>
 
       <input type="search" name="" id="searchId" />
-      
 
       <ul>
         <% productos.forEach(producto => { %>
@@ -26,7 +26,6 @@
       const search = document.querySelector("#searchId");
       search.addEventListener("input", (event) => {
         console.log(event.target.value);
-
       });
     </script>
   </body>
