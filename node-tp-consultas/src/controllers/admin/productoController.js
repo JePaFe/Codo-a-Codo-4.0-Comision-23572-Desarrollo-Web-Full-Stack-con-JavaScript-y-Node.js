@@ -64,8 +64,8 @@ const store = async (req, res) => {
     const producto = await model.create(req.body);
     console.log(producto);
 
-    if (req.files["frente"]) {
-      sharp(req.file.buffer)
+    if (req.files["uno"]) {
+      sharp(req.files['uno'].buffer)
         .resize(300)
         .toFile(
           path.resolve(
